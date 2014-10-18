@@ -5,3 +5,4 @@ source ~/google-cloud-sdk/path.bash.inc
 source ~/google-cloud-sdk/completion.bash.inc
 source $DIR/autoenv/activate.sh
 
+alias cws='go run $DIR/bin/createWorkspace.go'
