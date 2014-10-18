@@ -1,0 +1,7 @@
+export PATH=~/bin:~/go/bin:$PATH
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+source ~/google-cloud-sdk/path.bash.inc
+source ~/google-cloud-sdk/completion.bash.inc
+source $DIR/autoenv/activate.sh
+
