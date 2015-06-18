@@ -22,3 +22,4 @@ export LS_COLORS="di=96:ln=35:so=32:pi=33:ex=1;40:bd=34;40:cd=34;40:su=0;40:sg=0
 
 # don't forget to do a "npm config set prefix ~/npm"
 export NODE_PATH="$HOME/npm/lib/node_modules"
+export PATH=$HOME/npm/bin:$PATH
