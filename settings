@@ -6,6 +6,7 @@ source ~/google-cloud-sdk/completion.bash.inc
 source $DIR/autoenv/activate.sh
 
 alias cws='go run $DIR/bin/createWorkspace.go'
+alias dockergc='docker rmi -f $(docker images | grep "<none>" | awk "{print \$3}")'
 
 if [ ! -d "$HOME/.scripts" ]; then
   mkdir "$HOME/.scripts"
@@ -25,3 +26,12 @@ alias dockviz="docker run --rm -v /var/run/docker.sock:/var/run/docker.sock nate
 # don't forget to do a "npm config set prefix ~/npm"
 export NODE_PATH="$HOME/npm/lib/node_modules"
 export PATH=$HOME/npm/bin:$PATH
+
+if [ ! -d "$HOME/.scripts/dotfiles" ]; then
+  mkdir "$HOME/.scripts/dotfiles"
+  curl https://raw.githubusercontent.com/jfrazelle/dotfiles/master/.aliases >$HOME/.scripts/dotfiles/.aliases
+  source $HOME/.scripts/dotfiles/.aliases
+fi
+
+cd $HOME
+
