@@ -33,5 +33,4 @@ if [ ! -d "$HOME/.scripts/dotfiles" ]; then
   source $HOME/.scripts/dotfiles/.aliases
 fi
 
-cd $HOME
 
