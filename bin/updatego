@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# run with sudo or as root
+
+if [ -z "$1"]; then
+  echo "specify version, 1.5, 1.5.3, ..."
+  exit 
+fi
+ 
+curl -sSL https://storage.googleapis.com/golang/go$1.linux-amd64.tar.gz | tar -C /usr/local -xz

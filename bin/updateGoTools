@@ -1,0 +1,5 @@
+#!/bin/sh
+
+export GOPATH=$HOME/go
+go get -u github.com/constabulary/gb/...
+
