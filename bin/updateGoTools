@@ -2,4 +2,4 @@
 
 export GOPATH=$HOME/go
 go get -u github.com/constabulary/gb/...
-
+go get -u github.com/digitalocean/doctl

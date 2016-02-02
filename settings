@@ -33,4 +33,4 @@ if [ ! -d "$HOME/.scripts/dotfiles" ]; then
   source $HOME/.scripts/dotfiles/.aliases
 fi
 
-
+alias dockergc='docker rmi $(docker images -q --filter "dangling=true")'
